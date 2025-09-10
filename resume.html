@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>BANDI BRAHMMA REDDY — Resume</title>
+  <style>
+    /* Page & print sizing */
+    @page { size: A4; margin: 20mm; }
+    html,body { height: 100%; margin: 0; padding: 0; }
+    body {
+      font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      color: #111;
+      background: #fff;
+      -webkit-font-smoothing:antialiased;
+      line-height: 1.25;
+      font-size: 12px;
+      padding: 28px;
+      box-sizing: border-box;
+    }
+
+    /* Container to control width for printing */
+    .container {
+      max-width: 794px; /* ~ A4 width in px at 96dpi */
+      margin: 0 auto;
+    }
+
+    /* Header */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      border-bottom: 2px solid #111;
+      padding-bottom: 10px;
+      margin-bottom: 14px;
+    }
+    .name {
+      font-size: 20px;
+      font-weight: 700;
+      letter-spacing: 0.6px;
+    }
+    .contact {
+      text-align: right;
+      font-size: 11px;
+    }
+    .contact a { color: inherit; text-decoration: none; }
+
+    /* Sections */
+    section { margin-bottom: 12px; }
+    .section-title {
+      font-weight: 700;
+      font-size: 12px;
+      text-transform: uppercase;
+      margin-bottom: 6px;
+      letter-spacing: 0.8px;
+    }
+
+    /* Two-column layout for Education & Skills lines */
+    .two-col {
+      display: grid;
+      grid-template-columns: 1fr 200px;
+      gap: 12px;
+    }
+
+    ul {
+      margin: 6px 0 6px 18px;
+      padding: 0;
+    }
+
+    .muted { color: #333; font-size: 11px; }
+
+    /* Project boxes */
+    .project {
+      margin-bottom: 8px;
+    }
+    .project-title {
+      font-weight: 600;
+      font-size: 12px;
+    }
+    .project-desc {
+      font-size: 11px;
+      margin-top: 3px;
+    }
+
+    /* Achievements list style */
+    .achievements ul {
+      margin-left: 14px;
+      list-style: disc;
+    }
+
+    /* Footer small print */
+    footer { margin-top: 18px; font-size: 10px; color: #444; text-align: center; }
+
+    /* Print optimizations */
+    @media print {
+      body { padding: 0; }
+      header { border-bottom: 1px solid #000; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div>
+        <div class="name">BANDI BRAHMMA REDDY</div>
+        <div class="muted">OBJECTIVE</div>
+        <div style="max-width:520px; margin-top:6px; font-size:12px;">
+          I'm a BTech Data Science student proficient in C, Python, and Java. I have a strong interest in data analysis and software development. Eager to learn new technologies, I aim to apply my skills to solve real-world problems. My goal is to contribute to innovative solutions and grow continuously in Data Science.
+        </div>
+      </div>
+
+      <div class="contact">
+        <div><a href="mailto:23eg110c07@anurag.edu.in">23eg110c07@anurag.edu.in</a></div>
+        <div>(+91) 7995277101</div>
+      </div>
+    </header>
+
+    <!-- Education -->
+    <section>
+      <div class="section-title">Education</div>
+      <div style="font-size:12px;">
+        <div style="margin-bottom:8px;">
+          <strong>Bachelor of Computer Science - Data Science</strong>
+          <span style="float:right;" class="muted">Expected 2027</span>
+          <div class="muted">Anurag University — CGPA: 7.49 / 10</div>
+        </div>
+
+        <div style="margin-bottom:8px;">
+          <strong>Intermediate (2021 - 2023)</strong>
+          <div class="muted">SRI CHAITANYA KALASALA, Tarnaka — MARKS: 848 / 1000</div>
+        </div>
+
+        <div>
+          <strong>School (2021)</strong>
+          <div class="muted">SRI CHAITANYA HIGH SCHOOL, Boduppal — CGPA: 10 / 10</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section>
+      <div class="section-title">Projects</div>
+
+      <div class="project">
+        <div class="project-title">Virtual wardrobe app</div>
+        <div class="project-desc">
+          Created a Virtual Wardrobe app for organizing and managing clothing items. Features include uploading and categorizing clothes, generating outfit suggestions, and tracking usage. Utilized React Native for development and Firebase for storage.
+        </div>
+      </div>
+
+      <div class="project">
+        <div class="project-title">AI-Based Business Idea Generator</div>
+        <div class="project-desc">
+          Developed an AI-based platform that generates unique business ideas by analyzing marketing trends, user preferences, and emerging technologies. The tool offers personalized, data-driven business concepts with feasibility analysis and market insights.
+        </div>
+      </div>
+    </section>
+
+    <!-- Technical Skills -->
+    <section>
+      <div class="section-title">Technical Skills</div>
+      <div class="two-col">
+        <div>
+          <strong>Languages & Tools</strong>
+          <ul>
+            <li>Languages: C, Python, Basic Java, SQL, Basic DSA, HTML, CSS</li>
+            <li>Web / Frontend: HTML, CSS (basic)</li>
+          </ul>
+        </div>
+        <div>
+          <strong>Data & Visualization</strong>
+          <ul>
+            <li>Excel</li>
+            <li>Power BI</li>
+            <li>Tableau</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Achievements / Certifications -->
+    <section class="achievements">
+      <div class="section-title">Achievements & Certifications</div>
+      <ul>
+        <li>Certified in Introduction to Cybersecurity — Cisco</li>
+        <li>Certified in Cyber Threat Management — Cisco</li>
+        <li>Certified in Data Analytics Essentials — Cisco</li>
+        <li>Certified in Design Thinking — Infosys Springboard</li>
+        <li>Certified in Python — Infosys Springboard</li>
+      </ul>
+    </section>
+
+    <footer>
+      Resume converted from uploaded document. (Contact details present above.) 
+    </footer>
+  </div>
+</body>
+</html>
