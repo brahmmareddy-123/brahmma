@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration Form</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: pink;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container my-5">
+    <h2 class="text-center mb-4">Online Registration</h2>
+    <hr>
+
+    <form>
+        <!-- First Name -->
+        <div class="mb-3 row">
+            <label class="col-sm-3 col-form-label text-end">First Name <span class="text-danger">*</span></label>
+            <div class="col-sm-6">
+                <input type="text" class="form-control" name="fname" maxlength="40" placeholder="Enter first name">
+            </div>
+        </div>
+
+        <!-- Last Name -->
+        <div class="mb-3 row">
+            <label class="col-sm-3 col-form-label text-end">Last Name <span class="text-danger">*</span></label>
+            <div class="col-sm-6">
+                <input type="text" class="form-control" name="lname" maxlength="40" placeholder="Enter last name">
+            </div>
+        </div>
+
+        <!-- Password -->
+        <div class="mb-3 row">
+            <label class="col-sm-3 col-form-label text-end">Password <span class="text-danger">*</span></label>
+            <div class="col-sm-6">
+                <input type="password" class="form-control" name="pw" maxlength="40">
+            </div>
+        </div>
+
+        <!-- Confirm Password -->
+        <div class="mb-3 row">
+            <label class="col-sm-3 col-form-label text-end">Confirm Password <span class="text-danger">*</span></label>
+            <div class="col-sm-6">
+                <input type="password" class="form-control" name="cp" maxlength="40">
+            </div>
+        </div>
+
+        <!-- Gender -->
+        <div class="mb-3 row">
+            <label class="col-sm-3 col-form-label text-end">Gender</label>
+            <div class="col-sm-6">
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="sex" value="male" id="male">
+                    <label class="form-check-label" for="male">Male</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="sex" value="female" id="female">
+                    <label class="form-check-label" for="female">Female</label>
+                </div>
+            </div>
+        </div>
+
+        <!-- Date of Birth -->
+        <div class="mb-3 row">
+            <label class="col-sm-3 col-form-label text-end">Date of Birth</label>
+            <div class="col-sm-6 d-flex gap-2">
+                <select class="form-select" name="dob_month">
+                    <option selected>Month</option>
+                    <option>JAN</option>
+                    <option>FEB</option>
+                    <option>MAR</option>
+                    <option>APR</option>
+                    <option>MAY</option>
+                    <option>JUN</option>
+                    <option>JUL</option>
+                    <option>AUG</option>
+                    <option>SEP</option>
+                    <option>OCT</option>
+                    <option>NOV</option>
+                    <option>DEC</option>
+                </select>
+                <select class="form-select" name="dob_day">
+                    <option selected>Day</option>
+                    <!-- Generate 1 to 31 -->
+                    <!-- In production, generate with JS or server -->
+                    <script>
+                        for (let i = 1; i <= 31; i++) {
+                            document.write(`<option>${i.toString().padStart(2, '0')}</option>`);
+                        }
+                    </script>
+                </select>
+                <select class="form-select" name="dob_year">
+                    <option selected>Year</option>
+                    <option>2010</option>
+                    <option>2009</option>
+                    <option>2008</option>
+                    <option>2007</option>
+                    <option>2006</option>
+                    <option>2005</option>
+                    <option>2004</option>
+                    <option>2003</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- Email -->
+        <div class="mb-3 row">
+            <label class="col-sm-3 col-form-label text-end">Email ID <span class="text-danger">*</span></label>
+            <div class="col-sm-6">
+                <input type="email" class="form-control" name="ename" maxlength="40" placeholder="Enter email">
+            </div>
+        </div>
+
+        <!-- Phone Number -->
+        <div class="mb-3 row">
+            <label class="col-sm-3 col-form-label text-end">Phone Number <span class="text-danger">*</span></label>
+            <div class="col-sm-6">
+                <input type="tel" class="form-control" name="phn" maxlength="40" placeholder="Enter phone number">
+            </div>
+        </div>
+
+        <!-- Languages Known -->
+        <div class="mb-3 row">
+            <label class="col-sm-3 col-form-label text-end">Languages Known</label>
+            <div class="col-sm-6">
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" name="hb" value="en" id="lang-en">
+                    <label class="form-check-label" for="lang-en">English</label>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" name="hb" value="te" id="lang-te">
+                    <label class="form-check-label" for="lang-te">Telugu</label>
+                </div>
+            </div>
+        </div>
+
+        <!-- Address -->
+        <div class="mb-3 row">
+            <label class="col-sm-3 col-form-label text-end">Address <span class="text-danger">*</span></label>
+            <div class="col-sm-6">
+                <textarea class="form-control" name="add" rows="4"></textarea>
+            </div>
+        </div>
+
+        <!-- Terms & Conditions -->
+        <div class="mb-3 row">
+            <div class="offset-sm-3 col-sm-6">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name="xx" value="yy" id="agree">
+                    <label class="form-check-label" for="agree">
+                        I agree with the terms and conditions
+                    </label>
+                </div>
+            </div>
+        </div>
+
+        <!-- Submit/Reset Buttons -->
+        <div class="mb-3 row">
+            <div class="offset-sm-3 col-sm-6 d-flex gap-3">
+                <button type="submit" class="btn btn-success">Submit</button>
+                <button type="reset" class="btn btn-danger">Reset</button>
+            </div>
+        </div>
+
+    </form>
+</div>
+
+</body>
+</html>
